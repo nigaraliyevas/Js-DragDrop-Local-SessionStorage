@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Irshad</title>
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="logo">
+          <a href="./irshad.html" class="logo-link">
+            <img src="https://irshad.az/images/svg-icons/logo_novruz.svg?v=8" alt="logo" class="logo-img">
+          </a>
+        </div>
+        <nav class="header-nav">
+          <div class="nav-container">
+            <ul class="nav-list d-flex gap-5 list-unstyled">
+              <li class="nav-list__item">
+                <a href="./irshad.html" class="nav-list__link">Əsas Səhifə</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="" class="nav-list__link">Məhsullar</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="" class="nav-list__link">Əlaqə</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="./basket.html" class="nav-list__link">Səbət
+                  <i class="fa-solid fa-cart-shopping position-relative">
+                    <span class="count position-absolute">0</span>
+                  </i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <main class="main mt-5">
+    <div class="bg-fade d-none"></div>
+    <div class="container position-relative">
+      <div class="row products ">
+        <div class="product">
+          <div class="phone-head-icons text-end mt-3 ">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-scale-balanced"></i>
+          </div>
+          <div class="product-body" id="1">
+            <img src="./assets/img/iphone-15-pro-titanium.png" alt="" class="product-img">
+            <p class="product-category">Telefon</p>
+            <p class="product-name">iPhone 15 128 GB</p>
+            <div class="product-colors d-flex gap-1">
+              <div class="product-color black"></div>
+              <div class="product-color red"></div>
+              <div class="product-color silver"></div>
+              <div class="product-color blue"></div>
+            </div>
+            <div class="product-ratings d-flex gap-3 mt-3">
+              <div class="product-stars">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="product-comments">
+                <i class="fa-regular fa-comment comment"></i>
+                <span class="product-comment__count">2</span>
+              </div>
+            </div>
+            <div class="phone-middle__stock mt-3">
+              <div class="phone-middle__stock-title phone-middle__stock-title--blue">
+                <i class="fa-regular fa-house-chimney"></i> 
+                <span class="phone-middle__stock-subtitle">Stokda var</span>
+              </div>
+              <div class="phone-middle__stock-title phone-middle__stock-title--dark-blue">
+                <span class="phone-middle__stock-subtitle">Faizsiz teklif</span>
+              </div>
+              <div class="phone-middle__stock-title phone-middle__stock-title--dark-purple">
+                <span class="phone-middle__stock-subtitle">Ucuz tapsan, endirimlə al</span>
+              </div>
+              <div class="phone-middle__stock-title phone-middle__stock-title--red">
+                <span class="phone-middle__stock-subtitle">Komissiyazsız </span>
+              </div>
+            </div>
+            <div class="product-price-row d-flex gap-5 mt-5" >
+              <p class="product-price d-flex align-items-center">2259.99 AZN</p>
+              <div class="product-installment">
+                <div class="product-months d-flex gap-2">
+                  <div class="product-month" data-price="1" data-id="6">6 ay</div>
+                  <div class="product-month" data-price="1" data-id="12">12 ay</div>
+                  <div class="product-month" data-price="1" data-id="18">18 ay</div>
+                </div>
+                <p class="product-monthly-price mt-3">0 AZN</p>
+              </div>
+            </div>
+            <div class="btn-area my-3">
+              <a href="./basket.html" class="btn btn-success shop-btn w-100">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Səbətə əlavə et
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="phone-head-icons text-end mt-3 ">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-scale-balanced"></i>
+          </div>
+          <div class="product-body" id="2">
+            <img src="./assets/img/p2.jpg" alt="" class="product-img">
+            <p class="product-category">Qulaqlıqlar</p>
+            <p class="product-name">HONOR Choice Earbuds X3 Lite</p>
+            <div class="product-colors d-flex gap-1">
+              <div class="product-color black"></div>
+              <div class="product-color red"></div>
+              <div class="product-color silver"></div>
+              <div class="product-color blue"></div>
+            </div>
+            <div class="product-ratings d-flex gap-3 mt-3">
+              <div class="product-stars">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="product-comments">
+                <i class="fa-regular fa-comment comment"></i>
+                <span class="product-comment__count">2</span>
+              </div>
+            </div>
+            <div class="phone-middle__stock mt-3">
+              <div class="phone-middle__stock-title phone-middle__stock-title--blue">
+                <i class="fa-regular fa-house-chimney"></i> 
+                <span class="phone-middle__stock-subtitle">Stokda var</span>
+              </div>
+              <div class="phone-middle__stock-title phone-middle__stock-title--dark-blue">
+                <span class="phone-middle__stock-subtitle">Faizsiz teklif</span>
+              </div>
+              <div class="phone-middle__stock-title phone-middle__stock-title--dark-purple">
+                <span class="phone-middle__stock-subtitle">Ucuz tapsan, endirimlə al</span>
+              </div>
+              <div class="phone-middle__stock-title phone-middle__stock-title--red">
+                <span class="phone-middle__stock-subtitle">Komissiyazsız </span>
+              </div>
+            </div>
+            <div class="product-price-row d-flex gap-5 mt-5" >
+              <p class="product-price d-flex align-items-center">49.99 AZN</p>
+              <div class="product-installment">
+                <div class="product-months d-flex gap-2">
+                  <div class="product-month" data-price="2" data-id="6">6 ay</div>
+                  <div class="product-month" data-price="2" data-id="12">12 ay</div>
+                  <div class="product-month" data-price="2" data-id="18">18 ay</div>
+                </div>
+                <p class="product-monthly-price mt-3">0 AZN</p>
+              </div>
+            </div>
+            <div class="btn-area my-3">
+              <a href="./basket.html" class="btn btn-success shop-btn w-100">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Səbətə əlavə et
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="phone-head-icons text-end mt-3 ">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-scale-balanced"></i>
+          </div>
+          <div class="product-body" id="3">
+            <img src="./assets/img/p3.jpg" alt="" class="product-img">
+            <p class="product-category">Qolbaqlar</p>
+            <p class="product-name">Samsung Galaxy Fit3 Silver</p>
+            <div class="product-colors d-flex gap-1">
+              <div class="product-color black"></div>
+              <div class="product-color red"></div>
+              <div class="product-color silver"></div>
+              <div class="product-color blue"></div>
+            </div>
+            <div class="product-ratings d-flex gap-3 mt-3">
+              <div class="product-stars">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="product-comments">
+                <i class="fa-regular fa-comment comment"></i>
+                <span class="product-comment__count">2</span>
+              </div>
+            </div>
+            <div class="phone-middle__stock mt-3">
+              <div class="phone-middle__stock-title phone-middle__stock-title--blue">
+                <i class="fa-regular fa-house-chimney"></i> 
+                <span class="phone-middle__stock-subtitle">Stokda var</span>
+              </div>
+              <div class="phone-middle__stock-title phone-middle__stock-title--dark-blue">
+                <span class="phone-middle__stock-subtitle">Faizsiz teklif</span>
+              </div>
+              <div class="phone-middle__stock-title phone-middle__stock-title--dark-purple">
+                <span class="phone-middle__stock-subtitle">Ucuz tapsan, endirimlə al</span>
+              </div>
+              <div class="phone-middle__stock-title phone-middle__stock-title--red">
+                <span class="phone-middle__stock-subtitle">Komissiyazsız </span>
+              </div>
+            </div>
+            <div class="product-price-row d-flex gap-5 mt-5" >
+              <p class="product-price d-flex align-items-center">129.99 AZN</p>
+              <div class="product-installment">
+                <div class="product-months d-flex gap-2">
+                  <div class="product-month" data-price="3" data-id="6">6 ay</div>
+                  <div class="product-month" data-price="3" data-id="12">12 ay</div>
+                  <div class="product-month" data-price="3" data-id="18">18 ay</div>
+                </div>
+                <p class="product-monthly-price mt-3">0 AZN</p>
+              </div>
+            </div>
+            <div class="btn-area my-3">
+              <a href="./basket.html" class="btn btn-success shop-btn w-100">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Səbətə əlavə et
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="phone-head-icons text-end mt-3 ">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-scale-balanced"></i>
+          </div>
+          <div class="product-body" id="4">
+            <img src="./assets/img/p4.jpg" alt="" class="product-img">
+            <p class="product-category">Tozsoran</p>
+            <p class="product-name">Samsung VC18M2110SB/EV Blue</p>
+            <div class="product-colors d-flex gap-1">
+              <div class="product-color black"></div>
+              <div class="product-color red"></div>
+              <div class="product-color silver"></div>
+              <div class="product-color blue"></div>
+            </div>
+            <div class="product-ratings d-flex gap-3 mt-3">
+              <div class="product-stars">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="product-comments">
+                <i class="fa-regular fa-comment comment"></i>
+                <span class="product-comment__count">2</span>
+              </div>
+            </div>
+            <div class="phone-middle__stock mt-3">
+              <div class="phone-middle__stock-title phone-middle__stock-title--blue">
+                <i class="fa-regular fa-house-chimney"></i> 
+                <span class="phone-middle__stock-subtitle">Stokda var</span>
+              </div>
+              <div class="phone-middle__stock-title phone-middle__stock-title--dark-blue">
+                <span class="phone-middle__stock-subtitle">Faizsiz teklif</span>
+              </div>
+              <div class="phone-middle__stock-title phone-middle__stock-title--dark-purple">
+                <span class="phone-middle__stock-subtitle">Ucuz tapsan, endirimlə al</span>
+              </div>
+              <div class="phone-middle__stock-title phone-middle__stock-title--red">
+                <span class="phone-middle__stock-subtitle">Komissiyazsız </span>
+              </div>
+            </div>
+            <div class="product-price-row d-flex gap-5 mt-5" >
+              <p class="product-price d-flex align-items-center">189.99 AZN</p>
+              <div class="product-installment">
+                <div class="product-months d-flex gap-2">
+                  <div class="product-month" data-price="4" data-id="6">6 ay</div>
+                  <div class="product-month" data-price="4" data-id="12">12 ay</div>
+                  <div class="product-month" data-price="4" data-id="18">18 ay</div>
+                </div>
+                <p class="product-monthly-price mt-3">0 AZN</p>
+              </div>
+            </div>
+            <div class="btn-area my-3">
+              <a href="./basket.html" class="btn btn-success shop-btn w-100">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Səbətə əlavə et
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="phone-head-icons text-end mt-3 ">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-scale-balanced"></i>
+          </div>
+          <div class="product-body" id="5">
+            <img src="./assets/img/p5.jpg" alt="" class="product-img">
+            <p class="product-category">Televizorlar</p>
+            <p class="product-name">Samsung 55" LED SmartTV 4K</p>
+            <div class="product-colors d-flex gap-1">
+              <div class="product-color black"></div>
+              <div class="product-color red"></div>
+              <div class="product-color silver"></div>
+              <div class="product-color blue"></div>
+            </div>
+            <div class="product-ratings d-flex gap-3 mt-3">
+              <div class="product-stars">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="product-comments">
+                <i class="fa-regular fa-comment comment"></i>
+                <span class="product-comment__count">2</span>
+              </div>
+            </div>
+            <div class="phone-middle__stock mt-3">
+              <div class="phone-middle__stock-title phone-middle__stock-title--blue">
+                <i class="fa-regular fa-house-chimney"></i> 
+                <span class="phone-middle__stock-subtitle">Stokda var</span>
+              </div>
+              <div class="phone-middle__stock-title phone-middle__stock-title--dark-blue">
+                <span class="phone-middle__stock-subtitle">Faizsiz teklif</span>
+              </div>
+              <div class="phone-middle__stock-title phone-middle__stock-title--dark-purple">
+                <span class="phone-middle__stock-subtitle">Ucuz tapsan, endirimlə al</span>
+              </div>
+              <div class="phone-middle__stock-title phone-middle__stock-title--red">
+                <span class="phone-middle__stock-subtitle">Komissiyazsız </span>
+              </div>
+            </div>
+            <div class="product-price-row d-flex gap-5 mt-5" >
+              <p class="product-price d-flex align-items-center">1629.99 AZN</p>
+              <div class="product-installment">
+                <div class="product-months d-flex gap-2">
+                  <div class="product-month" data-price="5" data-id="6">6 ay</div>
+                  <div class="product-month" data-price="5" data-id="12">12 ay</div>
+                  <div class="product-month" data-price="5" data-id="18">18 ay</div>
+                </div>
+                <p class="product-monthly-price mt-3">0 AZN</p>
+              </div>
+            </div>
+            <div class="btn-area my-3">
+              <a href="./basket.html" class="btn btn-success shop-btn w-100">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Səbətə əlavə et
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="phone-head-icons text-end mt-3 ">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-scale-balanced"></i>
+          </div>
+          <div class="product-body" id="6">
+            <img src="./assets/img/p6.png" alt="" class="product-img">
+            <p class="product-category">Telefon</p>
+            <p class="product-name">Xiaomi Redmi Note 13 8 GB/256 GB</p>
+            <div class="product-colors d-flex gap-1">
+              <div class="product-color black"></div>
+              <div class="product-color red"></div>
+              <div class="product-color silver"></div>
+              <div class="product-color blue"></div>
+            </div>
+            <div class="product-ratings d-flex gap-3 mt-3">
+              <div class="product-stars">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="product-comments">
+                <i class="fa-regular fa-comment comment"></i>
+                <span class="product-comment__count">2</span>
+              </div>
+            </div>
+            <div class="phone-middle__stock mt-3">
+              <div class="phone-middle__stock-title phone-middle__stock-title--blue">
+                <i class="fa-regular fa-house-chimney"></i> 
+                <span class="phone-middle__stock-subtitle">Stokda var</span>
+              </div>
+              <div class="phone-middle__stock-title phone-middle__stock-title--dark-blue">
+                <span class="phone-middle__stock-subtitle">Faizsiz teklif</span>
+              </div>
+              <div class="phone-middle__stock-title phone-middle__stock-title--dark-purple">
+                <span class="phone-middle__stock-subtitle">Ucuz tapsan, endirimlə al</span>
+              </div>
+              <div class="phone-middle__stock-title phone-middle__stock-title--red">
+                <span class="phone-middle__stock-subtitle">Komissiyazsız </span>
+              </div>
+            </div>
+            <div class="product-price-row d-flex gap-5 mt-5" >
+              <p class="product-price d-flex align-items-center">519.99 AZN</p>
+              <div class="product-installment">
+                <div class="product-months d-flex gap-2">
+                  <div class="product-month" data-price="6" data-id="6">6 ay</div>
+                  <div class="product-month" data-price="6" data-id="12">12 ay</div>
+                  <div class="product-month" data-price="6" data-id="18">18 ay</div>
+                </div>
+                <p class="product-monthly-price mt-3">0 AZN</p>
+              </div>
+            </div>
+            <div class="btn-area my-3">
+              <a href="./basket.html" class="btn btn-success shop-btn w-100">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Səbətə əlavə et
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="phone-head-icons text-end mt-3 ">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-scale-balanced"></i>
+          </div>
+          <div class="product-body" id="7">
+            <img src="./assets/img/p7.png" alt="" class="product-img">
+            <p class="product-category">Noutbuklar</p>
+            <p class="product-name">Apple MacBook Air M3</p>
+            <div class="product-colors d-flex gap-1">
+              <div class="product-color black"></div>
+              <div class="product-color red"></div>
+              <div class="product-color silver"></div>
+              <div class="product-color blue"></div>
+            </div>
+            <div class="product-ratings d-flex gap-3 mt-3">
+              <div class="product-stars">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="product-comments">
+                <i class="fa-regular fa-comment comment"></i>
+                <span class="product-comment__count">2</span>
+              </div>
+            </div>
+            <div class="phone-middle__stock mt-3">
+              <div class="phone-middle__stock-title phone-middle__stock-title--blue">
+                <i class="fa-regular fa-house-chimney"></i> 
+                <span class="phone-middle__stock-subtitle">Stokda var</span>
+              </div>
+              <div class="phone-middle__stock-title phone-middle__stock-title--dark-blue">
+                <span class="phone-middle__stock-subtitle">Faizsiz teklif</span>
+              </div>
+              <div class="phone-middle__stock-title phone-middle__stock-title--dark-purple">
+                <span class="phone-middle__stock-subtitle">Ucuz tapsan, endirimlə al</span>
+              </div>
+              <div class="phone-middle__stock-title phone-middle__stock-title--red">
+                <span class="phone-middle__stock-subtitle">Komissiyazsız </span>
+              </div>
+            </div>
+            <div class="product-price-row d-flex gap-5 mt-5" >
+              <p class="product-price d-flex align-items-center">3429.99 AZN</p>
+              <div class="product-installment">
+                <div class="product-months d-flex gap-2">
+                  <div class="product-month" data-price="7" data-id="6">6 ay</div>
+                  <div class="product-month" data-price="7" data-id="12">12 ay</div>
+                  <div class="product-month" data-price="7" data-id="18">18 ay</div>
+                </div>
+                <p class="product-monthly-price mt-3">0 AZN</p>
+              </div>
+            </div>
+            <div class="btn-area my-3">
+              <a href="./basket.html" class="btn btn-success shop-btn w-100">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Səbətə əlavə et
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="phone-head-icons text-end mt-3 ">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-scale-balanced"></i>
+          </div>
+          <div class="product-body" id="8">
+            <img src="./assets/img/p8.jpg" alt="" class="product-img">
+            <p class="product-category">Qulaqlıqlar</p>
+            <p class="product-name">Apple AirPods Max Sky Blue</p>
+            <div class="product-colors d-flex gap-1">
+              <div class="product-color black"></div>
+              <div class="product-color red"></div>
+              <div class="product-color silver"></div>
+              <div class="product-color blue"></div>
+            </div>
+            <div class="product-ratings d-flex gap-3 mt-3">
+              <div class="product-stars">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              </div>
+              <div class="product-comments">
+                <i class="fa-regular fa-comment comment"></i>
+                <span class="product-comment__count">2</span>
+              </div>
+            </div>
+            <div class="phone-middle__stock mt-3">
+              <div class="phone-middle__stock-title phone-middle__stock-title--blue">
+                <i class="fa-regular fa-house-chimney"></i> 
+                <span class="phone-middle__stock-subtitle">Stokda var</span>
+              </div>
+              <div class="phone-middle__stock-title phone-middle__stock-title--dark-blue">
+                <span class="phone-middle__stock-subtitle">Faizsiz teklif</span>
+              </div>
+              <div class="phone-middle__stock-title phone-middle__stock-title--dark-purple">
+                <span class="phone-middle__stock-subtitle">Ucuz tapsan, endirimlə al</span>
+              </div>
+              <div class="phone-middle__stock-title phone-middle__stock-title--red">
+                <span class="phone-middle__stock-subtitle">Komissiyazsız </span>
+              </div>
+            </div>
+            <div class="product-price-row d-flex gap-5 mt-5" >
+              <p class="product-price d-flex align-items-center">1549.99 AZN</p>
+              <div class="product-installment">
+                <div class="product-months d-flex gap-2">
+                  <div class="product-month" data-price="8" data-id="6">6 ay</div>
+                  <div class="product-month" data-price="8" data-id="12">12 ay</div>
+                  <div class="product-month" data-price="8" data-id="18">18 ay</div>
+                </div>
+                <p class="product-monthly-price mt-3">0 AZN</p>
+              </div>
+            </div>
+            <div class="btn-area my-3">
+              <a href="./basket.html" class="btn btn-success shop-btn w-100 ">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Səbətə əlavə et
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="shopping-tab d-none">
+          <div class="shopping-body">
+            <div class="shopping-box">
+              <div class="shopping-header d-flex justify-content-between  align-items-center">
+                <h3 class="shopping-header__title">Bir-başa almaq istəyirsiniz?</h3>
+                <i class="fa-regular fa-circle-xmark fa-2xl remove-icon"></i>
+              </div>
+              <div class="shopping-bottom">
+                <div class="shop-products">
+                  <!-- <div class="shop-product">
+                    <div class="shop-product__img">
+                      <img src="./assets/img/p3.jpg" alt="">
+                    </div>
+                    <div class="shop-product__content">
+                      <p class="shop-product__category">Telefon</p>
+                      <p class="shop-product__name">Allah bilir nedi</p>
+                    </div>
+                    <div class="shop-product__total">
+                      <p class="product-product__price">144 AZN</p>
+                    </div>
+                    <div class="shop-product__counter">
+                      <button class="counter-minus">-</button>
+                      <input type="number" value="1" min="1" max="10" class="shop-product__count"></input>
+                      <button class="counter-plus">+</button>
+                    </div>
+                    <div class="shop-product__settings">
+                      <i class="fa-solid fa-trash shop-product__remove"></i>
+                    </div>
+                  </div> -->
+                </div>
+                <div class="shop-btns mt-5">
+                  <a href="./irshad.html" class="btn btn-outline-secondary continue-btn">Alış verişə davam et</a>
+                  <a href="./basket.html" class="btn btn-success btn-add-basket">Səbətə keç</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>
+  </main>
+  <script src="./assets/js/irshad.js"></script>
+  <!-- <script src="./assets/js/basket.js"></script> -->
+</body>
+</html>

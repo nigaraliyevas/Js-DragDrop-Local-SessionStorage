@@ -15,6 +15,7 @@ areas.forEach(area => {
   area.addEventListener("drop", function(ev) {
     ev.preventDefault();
     let id = ev.dataTransfer.getData("data-ID");
+    console.log(id);
     const parseId = parseInt(id);
     const start=parseInt(this.id.split("-")[0]);
     const end=parseInt(this.id.split("-")[1]);
