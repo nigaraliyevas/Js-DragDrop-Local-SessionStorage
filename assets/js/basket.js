@@ -99,8 +99,6 @@ function increaseCount() {
       basketProducts[index].count++;
 
       const productElement = document.getElementById(basketProducts[index].id);
-
-      productElement.count;
       const productCountInput = productElement.querySelector(
         ".shop-product__count"
       );
@@ -135,6 +133,17 @@ function calcTotal() {
 
 const orderButton = document.querySelector(".order");
 orderButton.addEventListener("click", function () {
+  const total = document.querySelector(".total").innerHTML;
+  if (parseInt(total) <= 0) {
+    Swal.fire({
+      position: "center",
+      icon: "error",
+      title: "Səbət boşdur!",
+      showConfirmButton: false,
+      timer: 3000,
+    });
+    return;
+  }
   Swal.fire({
     position: "center",
     icon: "success",
@@ -144,4 +153,15 @@ orderButton.addEventListener("click", function () {
   });
 });
 
+// Link to Home
+const total = document.querySelector(".total").innerHTML;
+if (parseInt(total) <= 0) {
+  const basketSide = document.querySelector(".basket-side");
+  const linkToHome = document.createElement("a");
+  linkToHome.setAttribute("href", "../irshad.html");
+  linkToHome.innerHTML = "Səbət boşdur, əsas səhifəyə qayıdın...";
+  linkToHome.classList.add("link-home", "m-4");
+  console.log(basketSide.firstChild.nextSibling.remove());
+  basketSide.append(linkToHome);
+}
 calcBasketCount();

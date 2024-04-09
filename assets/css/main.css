@@ -253,6 +253,15 @@
 .text {
   color: rgb(0, 172, 9);
 }
+.link-home {
+  font-size: 2rem;
+  display: block;
+  color: red;
+  text-decoration: none;
+}
+.link-home:hover {
+  text-decoration: 2px underline;
+}
 
 @media (max-width: 1200px) {
   .product-price-row {

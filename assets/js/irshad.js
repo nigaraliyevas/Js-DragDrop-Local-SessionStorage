@@ -85,14 +85,6 @@ shopBtns.forEach((btn) => {
     calcBasketCount();
   });
 });
-// });
-
-// function getBasket() {
-//   const basket = localStorage.getItem("basket");
-//   let products = [];
-//   if (basket) products = JSON.parse(basket);
-//   return products;
-// }
 
 const shopProducts = document.querySelector(".shop-products");
 function appendProducts() {
@@ -124,6 +116,7 @@ function appendProducts() {
   });
   removeProducts();
   increaseCount();
+  decreaseCount();
 }
 
 appendProducts();
@@ -135,10 +128,11 @@ continueBtn.addEventListener("click", function (ev) {
 
 //basket count
 function calcBasketCount() {
-  const basket = localStorage.getItem("basket");
   const countBasket = document.querySelector(".count");
   let length = 0;
-  if (basket) length = JSON.parse(basket).length;
+  for (let i = 0; i < basketProducts.length; i++) {
+    length += basketProducts[i].count;
+  }
   countBasket.innerText = length;
 }
 
@@ -187,22 +181,45 @@ function increaseCount() {
     plus.addEventListener("click", function () {
       basketProducts[index].count++;
 
-      const productElement = document.querySelector(
+      const productElement = document.getElementById(
         `#${basketProducts[index].id}`
       );
-      console.log(productElement);
-
-      productElement.count;
-      const productCountInput = productElement.querySelector(
-        ".shop-product__count"
-      );
-      productCountInput.value = basketProducts[index].count;
-
-      productElement.classList.remove("d-none");
       calcBasketCount();
       appendProducts();
       updateAllData();
     });
   });
 }
-// console.log(basketProducts[0]);
+function decreaseCount() {
+  const minusBtn = document.querySelectorAll(".counter-minus");
+  minusBtn.forEach((minus, index) => {
+    minus.addEventListener("click", function () {
+      if (basketProducts[index] && basketProducts[index].count > 0) {
+        basketProducts[index].count--;
+        const productElement = document.getElementById(
+          `#${basketProducts[index]}`
+        );
+        // const productElement = document.getElementById(
+        //   basketProducts[index].id
+        // );
+        // const productCountInput = productElement.querySelector(
+        //   ".shop-product__count"
+        // );
+
+        // productCountInput.value = basketProducts[index].count;
+      }
+      if (basketProducts[index].count === 0) {
+        basketProducts[index].id.classList.add("d-none");
+        basketProducts = basketProducts.filter(
+          (pr) => pr.id !== basketProducts[index].id
+        );
+        updateAllData();
+        appendProducts();
+      }
+      calcBasketCount();
+      updateAllData();
+      appendProducts();
+    });
+  });
+}
+calcBasketCount();
